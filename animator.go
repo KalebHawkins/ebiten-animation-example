@@ -18,19 +18,6 @@ type Animation struct {
 	incrementor int
 }
 
-// NewAnimation(sX, sY, fGapX, fGapY, fWidth, fHeight, fCount, fSpeed int) is a convience function for create a new Animation.
-func NewAnimation(sX, sY, fGapX, fGapY, fWidth, fHeight, fCount, fSpeed int) *Animation {
-	return &Animation{
-		startX:      sX,
-		startY:      sY,
-		frameWidth:  fWidth,
-		frameHeight: fHeight,
-		frameCount:  fCount,
-		frameSpeed:  fSpeed,
-		incrementor: 0,
-	}
-}
-
 // Update the incrementor each update frame.
 func (a *Animation) Update() {
 	a.incrementor++

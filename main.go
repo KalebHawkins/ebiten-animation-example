@@ -26,7 +26,7 @@ var foxSpriteSheet []byte
 type Game struct {
 	foxSprite *sprite
 	ticker    time.Ticker
-	animation int
+	animation int // Animation is used to determine what animation to play.
 }
 
 // Each update frame we increment the Game struct's inc variable.
